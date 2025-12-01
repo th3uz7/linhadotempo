@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(172, 3, 3);   /*Cor da página*/
+}
+
+h1{
+    text-align: center;     /*Centraliza o texto*/
+    background-color: rgb(206, 179, 4);
+    border-radius: 10px;    /*Canto redondo*/
+    border: 2px solid black;
+}
+h2{
+    text-align: center;
+    
+}
+
+.linha{
+    position: relative;     /*para posicionar a linha preta*/
+    width: 100%;        /*Ocupa 100% da largura*/
+    min-height: 100vh;  /*Altura minima*/
+    padding: 40px 0;    /*40px de espaço em cima e embaixo*/
+}
+.linha::before{
+    content: "";
+    position: absolute;
+    left: 50%;         /*deixa no meio da tela*/
+    top: 0;       /*Começa no topo*/
+    transform: translateX(-50%); /*Centraliza a linha */
+    width: 3px;     /*Expessura da linha*/
+    height: 100%;
+    background-color: black;
+}
+.card{
+    display: flex;     /*coloca a imagem e o texto lado a lado*/
+    align-items: center;
+    gap: 12px;  /*Espaço entre a imagem e o texto*/
+    width: 42%;     /*Para ocupar 40% da largura da tela*/
+    margin-left: 4%;         /* esquerda padrão */
+    margin-bottom: 24px;    /*Espaço embaixo de cada card*/
+    background: #fff; /*Fundo do card branco*/
+    padding: 12px;  /*Espaço interno em todos os lados*/
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);       /*Sombra no card*/
+    border: 2px solid rgb(206, 179, 4);
+}
+.eventos{
+    padding-top: 20px;
+}
+.fotos{
+    width: 45%;
+    max-width: 180px;
+    border-radius: 8px;
+    display: block; /*Ajuda no alinhamento*/
+}
+.textos{
+    flex: 1; /*Serve para ocupar todo espaço q sobra ao lado da imagem*/
+}
+.textos h3{
+    text-align: center;
+    margin: 0 0 8px 0;
+    font-size: 1.5rem; /*Tamanho da fonte*/
+    font-weight: 600; /*Deixa a fonte mais grossa*/
+}
+.textos p{
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.5;   /*Espaçamento entre as linhas*/
+    text-align: justify;
+}
+.direita{
+     margin-left: 52%;     /*Coloca o card do outro lado da linha*/
+}
+
+.direita-botao{
+    display: flex;              /* deixa conteúdo em linha, video + texto lado a lado */
+    align-items: center;
+    gap: 12px;
+    width: 42%;
+    margin-left: 52%;            /* esquerda padrão */
+    margin-bottom: 24px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border: 2px solid rgb(206, 179, 4);
+}
+
+.titulo-videos{
+    text-align: center;
+    background-color: rgb(206, 179, 4);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 16px;
+    padding: 8px;
+}
+
+.videos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centraliza na horizontal */
+    gap: 24px;             /* espaço entre um vídeo e outro */
+}
+.video-card-centro{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 50%;            /* ocupa 60% da largura da tela */
+    max-width: 600px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;            /* pra ficar na frente da linha preta */
+    border: 2px solid rgb(206, 179, 4);
+    text-align: center;
+}
+.video-midia{
+    width: 35%;
+    max-width: 180px;
+    border-radius: 8px;
+    display: block;
+}
+.mensagem-final{
+    max-width: 700px;
+    margin: 40px auto 24px auto;
+    background: #fff;
+    padding: 20px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    text-align: left;
+    border: 2px solid rgb(206, 179, 4);
+}
+
+.mensagem-final h2{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1.7rem;
+}
+
+.mensagem-final p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.mensagem-assinatura{
+    margin-top: 14px;
+    text-align: center;
+    font-style: italic;
+}
+.final{
+    text-align: center;
+}
